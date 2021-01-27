@@ -10,7 +10,7 @@ before_install:
   - docker --version
   - cd jenkins-client-it-docker
   - docker build --no-cache -t jenkins-with-plugins .
-  - docker run --name jenkins-for-testing -v "$(pwd)/jobs":/var/jenkins_home/jobs -a http://10.41.33.23:8080/ -d -u test -p test1qaz2wsx  --env JENKINS_OPTS=--httpPort=8080 jenkins-with-plugins
+  - docker run --name jenkins-for-testing -v "$(pwd)/jobs":/var/jenkins_home/jobs -a http://10.41.33.23:8080/ -d -u ops -p Cyber!742#1  --env JENKINS_OPTS=--httpPort=8080 jenkins-with-plugins
 
   - cd ..
 
